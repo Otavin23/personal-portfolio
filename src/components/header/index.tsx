@@ -5,6 +5,7 @@ import {
   UnorderedList,
   ListItem,
   Text,
+  Image,
 } from "@chakra-ui/react";
 
 const Header = () => {
@@ -13,7 +14,7 @@ const Header = () => {
       as="header"
       justify="center"
       py="1.5rem"
-      bg="#FAFAFA"
+      bg="#ffffff"
       borderBottom="1px solid #ebe8e8"
     >
       <Container
@@ -23,11 +24,18 @@ const Header = () => {
         w="95%"
         maxW="1200px"
       >
-        <Box as="div">
-          <Text as="span" letterSpacing="1px" fontWeight="700">
-            # OTAVIO
+        <Flex as="div" align="center">
+          <Text
+            as="span"
+            display="flex"
+            alignItems="center"
+            letterSpacing="1px"
+            fontWeight="700"
+          >
+            <Image src="../assets/logoOtavio.png" alt="" w="50px" mr="1rem" />{" "}
+            OTAVIO
           </Text>
-        </Box>
+        </Flex>
 
         <UnorderedList display="flex" alignItems="center" listStyleType="none">
           <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">

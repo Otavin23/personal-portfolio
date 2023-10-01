@@ -181,6 +181,73 @@ const Home = () => {
               </ListItem>
             </UnorderedList>
           </Flex>
+
+          <Flex
+            as="div"
+            direction="column"
+            pos="fixed"
+            top="300px"
+            right="40px"
+          >
+            <UnorderedList>
+              <ListItem
+                display="Flex"
+                alignItems="center"
+                justifyContent="center"
+                w="60px"
+                h="60px"
+                borderRadius="50%"
+                bg="#000"
+                boxShadow="0px 0px 25px #000;"
+                cursor="pointer"
+              >
+                <Image
+                  src="../assets/githubOutline.png"
+                  alt=""
+                  w="35px"
+                  h="35px"
+                />
+              </ListItem>
+              <ListItem
+                display="Flex"
+                alignItems="center"
+                justifyContent="center"
+                w="60px"
+                h="60px"
+                borderRadius="50%"
+                bg="#000"
+                mt="0.5rem"
+                cursor="pointer"
+                boxShadow="0px 0px 25px #000;"
+              >
+                <Image
+                  src="../assets/linkedinOutline.png"
+                  alt=""
+                  w="35px"
+                  h="35px"
+                />
+              </ListItem>
+              <ListItem
+                display="Flex"
+                alignItems="center"
+                justifyContent="center"
+                w="60px"
+                h="60px"
+                borderRadius="50%"
+                bg="#000"
+                mt="0.5rem"
+                cursor="pointer"
+                boxShadow="0px 0px 25px #000;"
+              >
+                <Image
+                  src="../assets/whatssapOutline.png"
+                  alt=""
+                  w="35px"
+                  h="35px"
+                />
+              </ListItem>
+            </UnorderedList>
+          </Flex>
         </Container>
       </Flex>
 
@@ -232,7 +299,7 @@ const Home = () => {
                 >
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/html.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -252,7 +319,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/css.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -272,7 +339,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/javascript.webp"
                       alt=""
                       w="25px"
                       h="25px"
@@ -292,7 +359,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/jest.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -312,7 +379,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/chakra.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -338,7 +405,7 @@ const Home = () => {
                 >
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/react.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -358,7 +425,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/typescript.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -378,7 +445,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/figma.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -398,27 +465,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
-                      alt=""
-                      w="25px"
-                      h="25px"
-                      mr="0.5rem"
-                    />
-                    <Text
-                      as="span"
-                      fontWeight="600"
-                      fontSize="16px"
-                      color="#939A9D"
-                      pl="0.2rem"
-                      maxW="100px"
-                    >
-                      Jest
-                    </Text>
-                  </ListItem>
-
-                  <ListItem display="flex" alignItems="start" mt="2rem">
-                    <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/nextjs.svg"
                       alt=""
                       w="25px"
                       h="25px"
@@ -437,7 +484,7 @@ const Home = () => {
                   </ListItem>
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/sass.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -482,7 +529,7 @@ const Home = () => {
                 >
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/nodejs.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -502,7 +549,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/javascript.webp"
                       alt=""
                       w="25px"
                       h="25px"
@@ -522,7 +569,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/typescript.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -542,7 +589,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/jest.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -568,7 +615,7 @@ const Home = () => {
                 >
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/typeorm.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -588,7 +635,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/express.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -608,7 +655,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/mira.png"
+                      src="../assets/skills/postgres.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -622,7 +669,7 @@ const Home = () => {
                       pl="0.2rem"
                       maxW="100px"
                     >
-                      SQL
+                      postgres
                     </Text>
                   </ListItem>
                 </UnorderedList>
@@ -1275,6 +1322,28 @@ const Home = () => {
             </UnorderedList>
           </Flex>
         </Container>
+      </Flex>
+
+      <Flex as="footer" justifyContent="center" mt="6rem" pb="1rem">
+        <Text as="span" display="flex" alignItems="center" fontWeight="600">
+          Feito com
+          <svg
+            stroke="2px"
+            fill="red"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              marginLeft: "0.5rem",
+              marginRight: "0.5rem",
+            }}
+          >
+            <path d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"></path>
+          </svg>
+          por Otavio Vieira
+        </Text>
       </Flex>
     </>
   );
