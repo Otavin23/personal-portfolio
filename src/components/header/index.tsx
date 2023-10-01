@@ -10,7 +10,7 @@ import {
 const Header = () => {
   return (
     <Flex
-      as="div"
+      as="header"
       justify="center"
       py="1.5rem"
       bg="#FAFAFA"
