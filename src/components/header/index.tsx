@@ -21,7 +21,7 @@ const Header = () => {
         justifyContent="space-between"
         alignItems="center"
         w="95%"
-        maxW="1300px"
+        maxW="1200px"
       >
         <Box as="div">
           <Text as="span" letterSpacing="1px" fontWeight="700">
