@@ -48,6 +48,7 @@ const Header = () => {
             alignItems="center"
             letterSpacing="1px"
             fontWeight="700"
+            color="#fff"
           >
             OTAVIO
           </Text>

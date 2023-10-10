@@ -7,6 +7,7 @@ import {
   ListItem,
   Button,
   Image,
+  Box,
 } from "@chakra-ui/react";
 import { Header } from "../../components/header";
 import { projectStructure } from "../../utils/projectStructure";
@@ -186,33 +187,43 @@ const Home = () => {
               mt="1rem"
             >
               <ListItem cursor="pointer" mr="1rem">
-                <Image
-                  src="../assets/contact/github.png"
-                  alt=""
-                  w="30px"
-                  h="30px"
-                  opacity="0.5"
-                />
+                <Box as="a" href="https://github.com/Otavin23" target="_blank">
+                  <Image
+                    src="../assets/contact/github.png"
+                    alt=""
+                    w="30px"
+                    h="30px"
+                    opacity="0.5"
+                  />
+                </Box>
               </ListItem>
 
               <ListItem cursor="pointer" mr="1rem">
-                <Image
-                  src="../assets/contact/linkedin.png"
-                  alt=""
-                  w="30px"
-                  h="30px"
-                  opacity="0.5"
-                />
+                <Box
+                  as="a"
+                  href="https://www.linkedin.com/in/otavio-vieira-95aa97294/"
+                  target="_blank"
+                >
+                  <Image
+                    src="../assets/contact/linkedin.png"
+                    alt=""
+                    w="30px"
+                    h="30px"
+                    opacity="0.5"
+                  />
+                </Box>
               </ListItem>
 
               <ListItem cursor="pointer">
-                <Image
-                  src="../assets/contact/whatssap.png"
-                  alt=""
-                  w="30px"
-                  h="30px"
-                  opacity="0.5"
-                />
+                <Box as="a" href="https://wa.me/553597335548" target="_blank">
+                  <Image
+                    src="../assets/contact/whatssap.png"
+                    alt=""
+                    w="30px"
+                    h="30px"
+                    opacity="0.5"
+                  />
+                </Box>
               </ListItem>
             </UnorderedList>
           </Flex>
@@ -235,6 +246,7 @@ const Home = () => {
           <Heading
             pos="relative"
             fontWeight="500"
+            color="#fff"
             _before={{
               content: `"02. "`,
               fontSize: "23px",
@@ -275,7 +287,7 @@ const Home = () => {
                   ml={{ base: "0", lg: "2rem" }}
                   mt={{ base: "2rem", lg: "0" }}
                 >
-                  <Heading as="h3" fontSize="25px">
+                  <Heading as="h3" fontSize="25px" color="#fff">
                     {project.name}
                   </Heading>
                   <Text
@@ -288,83 +300,48 @@ const Home = () => {
                   </Text>
 
                   <Flex wrap="wrap" mt="1rem">
-                    <Text
-                      as="span"
-                      px="1rem"
-                      py="0.5rem"
-                      borderRadius="0.5rem"
-                      mr="1rem"
-                      mt="1rem"
-                      bg="#1f1f1f"
-                      color="#FFE100"
-                      fontWeight="600"
-                      fontSize="14px"
-                      opacity="0.7"
-                    >
-                      React.js
-                    </Text>
-                    <Text
-                      as="span"
-                      px="1rem"
-                      py="0.6rem"
-                      borderRadius="0.5rem"
-                      mr="1rem"
-                      mt="1rem"
-                      bg="#1f1f1f"
-                      color="#FFE100"
-                      fontWeight="600"
-                      fontSize="14px"
-                      opacity="0.7"
-                    >
-                      Typescript
-                    </Text>
-                    <Text
-                      as="span"
-                      px="1rem"
-                      py="0.6rem"
-                      borderRadius="0.5rem"
-                      mr="1rem"
-                      mt="1rem"
-                      bg="#1f1f1f"
-                      color="#FFE100"
-                      fontWeight="600"
-                      fontSize="14px"
-                      opacity="0.7"
-                    >
-                      Chakra UI
-                    </Text>
-                    <Text
-                      as="span"
-                      px="1rem"
-                      py="0.6rem"
-                      borderRadius="0.5rem"
-                      mr="1rem"
-                      mt="1rem"
-                      bg="#1f1f1f"
-                      color="#FFE100"
-                      fontWeight="600"
-                      fontSize="14px"
-                      opacity="0.7"
-                    >
-                      Git
-                    </Text>
+                    {project.tech.map((tech, index) => (
+                      <Text
+                        key={index}
+                        as="span"
+                        px="1rem"
+                        py="0.5rem"
+                        borderRadius="0.5rem"
+                        mr="1rem"
+                        mt="1rem"
+                        bg="#1f1f1f"
+                        color="#FFE100"
+                        fontWeight="600"
+                        fontSize="14px"
+                        opacity="0.7"
+                      >
+                        {tech}
+                      </Text>
+                    ))}
                   </Flex>
 
                   <Button
                     mt="2rem"
                     w={{ lg: "100px", sm: "100%" }}
-                    display="flex"
-                    alignItems="center"
                     bg="transparent"
+                    color="#fff"
                   >
-                    Demo
-                    <Image
-                      src="../assets/projects/arrowGray.png"
-                      alt=""
-                      w="20px"
-                      h="20px"
-                      ml="0.5rem"
-                    />
+                    <Flex
+                      as="a"
+                      align="center"
+                      justify="center"
+                      href={project.demo}
+                      target="_blank"
+                    >
+                      Demo
+                      <Image
+                        src="../assets/projects/arrowGray.png"
+                        alt=""
+                        w="20px"
+                        h="20px"
+                        ml="0.5rem"
+                      />
+                    </Flex>
                   </Button>
 
                   <Button
@@ -373,23 +350,34 @@ const Home = () => {
                     alignItems="center"
                     bg="transparent"
                     w={{ lg: "135px", sm: "100%" }}
+                    color="#fff"
                   >
-                    Ver codigo
-                    <Image
-                      src="../assets/projects/arrowGray.png"
-                      alt=""
-                      w="20px"
-                      h="20px"
-                      ml="0.5rem"
-                    />
+                    <Flex
+                      as="a"
+                      align="center"
+                      justify="center"
+                      href={project.code}
+                      target="_blank"
+                    >
+                      Ver codigo
+                      <Image
+                        src="../assets/projects/arrowGray.png"
+                        alt=""
+                        w="20px"
+                        h="20px"
+                        ml="0.5rem"
+                      />
+                    </Flex>
                   </Button>
                 </Flex>
               </ListItem>
             ))}
           </UnorderedList>
 
-          <Button mt="5rem" px="3rem" py="1.5rem">
-            Ver mais projetos
+          <Button mt="5rem" px="3rem" py="1.5rem" bg="#272727">
+            <Flex as="a" href="https://github.com/Otavin23" target="_blank">
+              Ver mais projetos
+            </Flex>
           </Button>
         </Container>
       </Flex>
@@ -410,6 +398,7 @@ const Home = () => {
           <Heading
             pos="relative"
             fontWeight="500"
+            color="#fff"
             _before={{
               content: `"01. "`,
               fontSize: "23px",
