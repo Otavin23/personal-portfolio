@@ -8,7 +8,6 @@ import {
   Button,
   Image,
   Box,
-  useRadioGroup,
 } from "@chakra-ui/react";
 import { Header } from "../../components/header";
 import { projectStructure } from "../../utils/projectStructure";
@@ -22,7 +21,6 @@ const Home = () => {
         <Container
           w="95%"
           maxW="1200px"
-          my="10rem"
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -221,7 +219,7 @@ const Home = () => {
                 data-aos="fade-right"
                 data-aos-duration="1500"
                 display="flex"
-                borderBottom="1px solid #bdbdbd"
+                borderBottom="1px solid #3b3b3b"
                 py="2rem"
               >
                 <Image
@@ -230,7 +228,7 @@ const Home = () => {
                   w="420px"
                   h="304px"
                   objectFit="cover"
-                  borderRadius="1rem"
+                  borderRadius="0.5rem"
                 />
                 <Flex
                   as="div"
@@ -254,12 +252,14 @@ const Home = () => {
                     <Text
                       as="span"
                       px="1rem"
-                      py="0.6rem"
+                      py="0.5rem"
                       borderRadius="0.5rem"
                       mr="1rem"
-                      bg="#000"
-                      color="#fff"
+                      bg="#1f1f1f"
+                      color="#FFE100"
                       fontWeight="600"
+                      fontSize="14px"
+                      opacity="0.7"
                     >
                       React.js
                     </Text>
@@ -269,9 +269,11 @@ const Home = () => {
                       py="0.6rem"
                       borderRadius="0.5rem"
                       mr="1rem"
-                      bg="#000"
-                      color="#fff"
+                      bg="#1f1f1f"
+                      color="#FFE100"
                       fontWeight="600"
+                      fontSize="14px"
+                      opacity="0.7"
                     >
                       Typescript
                     </Text>
@@ -281,9 +283,11 @@ const Home = () => {
                       py="0.6rem"
                       borderRadius="0.5rem"
                       mr="1rem"
-                      bg="#000"
-                      color="#fff"
+                      bg="#1f1f1f"
+                      color="#FFE100"
                       fontWeight="600"
+                      fontSize="14px"
+                      opacity="0.7"
                     >
                       Chakra UI
                     </Text>
@@ -293,9 +297,11 @@ const Home = () => {
                       py="0.6rem"
                       borderRadius="0.5rem"
                       mr="1rem"
-                      bg="#000"
-                      color="#fff"
+                      bg="#1f1f1f"
+                      color="#FFE100"
                       fontWeight="600"
+                      fontSize="14px"
+                      opacity="0.7"
                     >
                       Git
                     </Text>
@@ -310,7 +316,7 @@ const Home = () => {
                   >
                     Demo
                     <Image
-                      src="../assets/project/arrowGray.png"
+                      src="../assets/projects/arrowGray.png"
                       alt=""
                       w="20px"
                       h="20px"
@@ -327,7 +333,7 @@ const Home = () => {
                   >
                     Ver codigo
                     <Image
-                      src="../assets/project/arrowGray.png"
+                      src="../assets/projects/arrowGray.png"
                       alt=""
                       w="20px"
                       h="20px"

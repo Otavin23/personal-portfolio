@@ -45,9 +45,6 @@ const Header = () => {
           <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">
             Habilidades
           </ListItem>
-          <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">
-            Projetos
-          </ListItem>
           <ListItem color="#717171" fontWeight="600" cursor="pointer">
             Contato
           </ListItem>
