@@ -6,9 +6,13 @@ import {
   ListItem,
   Text,
   Image,
+  useStatStyles,
 } from "@chakra-ui/react";
+import { useState } from "react";
 
 const Header = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <Flex
       as="header"
@@ -50,7 +54,11 @@ const Header = () => {
           </Text>
         </Flex>
 
-        <UnorderedList display="flex" alignItems="center" listStyleType="none">
+        <UnorderedList
+          display={{ base: "none", sm: "flex" }}
+          alignItems="center"
+          listStyleType="none"
+        >
           <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">
             <Box as="a" href="#section1">
               Inicio
@@ -69,6 +77,71 @@ const Header = () => {
             </Box>
           </ListItem>
         </UnorderedList>
+
+        <Box
+          display={{ base: "flex", sm: "none" }}
+          cursor="pointer"
+          onClick={() => setModal(!modal)}
+        >
+          {modal ? (
+            <Image src="../assets/close.png" alt="" w="30px" h="30px" />
+          ) : (
+            <Image src="../assets/menu.png" alt="" w="30px" h="30px" />
+          )}
+          {modal && (
+            <Box
+              pos="absolute"
+              bg="rgba(0, 0, 0, 0.7)"
+              left="1px"
+              w="100%"
+              top="70px"
+              h="100vh"
+              zIndex="1px"
+              borderRadius="0 1rem 1rem 0"
+            >
+              <UnorderedList
+                py="1rem"
+                m="0"
+                p="1rem"
+                listStyleType="none"
+                bg="#0e0e0e"
+              >
+                <ListItem
+                  color="#717171"
+                  fontWeight="600"
+                  mt="0.5rem"
+                  cursor="pointer"
+                >
+                  <Box as="a" href="#section1">
+                    Inicio
+                  </Box>
+                </ListItem>
+
+                <ListItem
+                  color="#717171"
+                  fontWeight="600"
+                  mt="0.5rem"
+                  cursor="pointer"
+                >
+                  <Box as="a" href="#projects">
+                    Projetos
+                  </Box>
+                </ListItem>
+
+                <ListItem
+                  color="#717171"
+                  fontWeight="600"
+                  mt="0.5rem"
+                  cursor="pointer"
+                >
+                  <Box as="a" href="#skills">
+                    Habilidades
+                  </Box>
+                </ListItem>
+              </UnorderedList>
+            </Box>
+          )}
+        </Box>
       </Container>
     </Flex>
   );
