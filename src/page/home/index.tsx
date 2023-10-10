@@ -17,7 +17,12 @@ const Home = () => {
     <>
       <Header />
 
-      <Flex as="main" justify="center" id="section1">
+      <Flex
+        as="main"
+        justify="center"
+        id="section1"
+        h={{ base: "auto", lg: "calc(100vh - 72px)", sm: "calc(100vh - 72px)" }}
+      >
         <Container
           w="95%"
           maxW="1200px"
@@ -320,18 +325,12 @@ const Home = () => {
                     ))}
                   </Flex>
 
-                  <Button
-                    mt="2rem"
-                    w={{ lg: "100px", sm: "100%" }}
-                    bg="transparent"
-                    color="#fff"
-                  >
-                    <Flex
-                      as="a"
-                      align="center"
-                      justify="center"
-                      href={project.demo}
-                      target="_blank"
+                  <Flex as="a" href={project.demo} target="_blank">
+                    <Button
+                      mt="2rem"
+                      w={{ lg: "100px", sm: "100%" }}
+                      bg="transparent"
+                      color="#fff"
                     >
                       Demo
                       <Image
@@ -341,23 +340,17 @@ const Home = () => {
                         h="20px"
                         ml="0.5rem"
                       />
-                    </Flex>
-                  </Button>
+                    </Button>
+                  </Flex>
 
-                  <Button
-                    mt="0.5rem"
-                    display="flex"
-                    alignItems="center"
-                    bg="transparent"
-                    w={{ lg: "135px", sm: "100%" }}
-                    color="#fff"
-                  >
-                    <Flex
-                      as="a"
-                      align="center"
-                      justify="center"
-                      href={project.code}
-                      target="_blank"
+                  <Flex as="a" href={project.code} target="_blank">
+                    <Button
+                      mt="0.5rem"
+                      display="flex"
+                      alignItems="center"
+                      bg="transparent"
+                      w={{ lg: "135px", sm: "100%" }}
+                      color="#fff"
                     >
                       Ver codigo
                       <Image
@@ -367,18 +360,18 @@ const Home = () => {
                         h="20px"
                         ml="0.5rem"
                       />
-                    </Flex>
-                  </Button>
+                    </Button>
+                  </Flex>
                 </Flex>
               </ListItem>
             ))}
           </UnorderedList>
 
-          <Button mt="5rem" px="3rem" py="1.5rem" bg="#272727">
-            <Flex as="a" href="https://github.com/Otavin23" target="_blank">
+          <Flex as="a" href="https://github.com/Otavin23" target="_blank">
+            <Button mt="5rem" px="3rem" py="1.5rem" bg="#272727">
               Ver mais projetos
-            </Flex>
-          </Button>
+            </Button>
+          </Flex>
         </Container>
       </Flex>
 
