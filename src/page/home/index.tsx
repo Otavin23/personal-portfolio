@@ -368,7 +368,7 @@ const Home = () => {
           </UnorderedList>
 
           <Flex as="a" href="https://github.com/Otavin23" target="_blank">
-            <Button mt="5rem" px="3rem" py="1.5rem" bg="#272727">
+            <Button mt="5rem" px="3rem" py="1.5rem" bg="#272727" color="#fff">
               Ver mais projetos
             </Button>
           </Flex>
