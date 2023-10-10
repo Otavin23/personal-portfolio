@@ -26,12 +26,12 @@ const Home = () => {
           alignItems="center"
           justifyContent="center"
           p="0"
-          mt="72px"
+          m="72px 0 0 0"
         >
           <Heading
             as="h1"
             fontWeight="800"
-            fontSize="60px"
+            fontSize="clamp(40px, 5vw, 60px)"
             maxW="950px"
             textAlign="center"
             bgGradient="linear(to-l, #727272, #ffffff)"
@@ -53,7 +53,7 @@ const Home = () => {
             mt="1rem"
             fontWeight="400"
             maxW="800px"
-            fontSize="20px"
+            fontSize="clamp(16px, 2vw, 20px)"
             color="#6f706f"
             textAlign="center"
           >
@@ -65,7 +65,7 @@ const Home = () => {
 
           <UnorderedList
             display="flex"
-            m="2rem 0 0 0"
+            justifyContent="center"
             listStyleType="none"
             flexWrap="wrap"
           >
@@ -81,6 +81,7 @@ const Home = () => {
               borderRadius="0.5rem"
               display="flex"
               alignItems="center"
+              mt="2rem"
             >
               React.js
             </ListItem>
@@ -96,6 +97,7 @@ const Home = () => {
               borderRadius="0.5rem"
               display="flex"
               alignItems="center"
+              mt="2rem"
             >
               Typescript
             </ListItem>
@@ -111,6 +113,7 @@ const Home = () => {
               borderRadius="0.5rem"
               display="flex"
               alignItems="center"
+              mt="2rem"
             >
               Next.js
             </ListItem>
@@ -126,6 +129,7 @@ const Home = () => {
               borderRadius="0.5rem"
               display="flex"
               alignItems="center"
+              mt="2rem"
             >
               Chakra UI
             </ListItem>
@@ -140,12 +144,18 @@ const Home = () => {
               borderRadius="0.5rem"
               display="flex"
               alignItems="center"
+              mt="2rem"
             >
               Git
             </ListItem>
           </UnorderedList>
 
-          <Flex as="div" alignItems="center" mt="5rem">
+          <Flex
+            as="div"
+            direction={{ base: "column", sm: "row" }}
+            alignItems="center"
+            mt="5rem"
+          >
             <Button
               bg="transparent"
               border="1px solid transparent"
@@ -208,7 +218,8 @@ const Home = () => {
           data-aos-duration="1500"
           w="95%"
           maxW="1200px"
-          my="5rem"
+          m="5rem 0"
+          p="0"
           display="flex"
           justifyContent="center"
           alignItems="center"
@@ -240,11 +251,12 @@ const Home = () => {
                 display="flex"
                 borderBottom="1px solid #3b3b3b"
                 py="2rem"
+                flexDirection={{ base: "column", lg: "row" }}
               >
                 <Image
                   src={project.image}
                   alt=""
-                  w="420px"
+                  w={{ lg: "420px", md: "100%" }}
                   h="304px"
                   objectFit="cover"
                   borderRadius="0.5rem"
@@ -253,13 +265,14 @@ const Home = () => {
                   as="div"
                   direction="column"
                   justifyContent="center"
-                  ml="2rem"
+                  ml={{ base: "0", lg: "2rem" }}
+                  mt={{ base: "2rem", lg: "0" }}
                 >
                   <Heading as="h3" fontSize="25px">
                     {project.name}
                   </Heading>
                   <Text
-                    my="1rem"
+                    mt="1rem"
                     fontWeight="500"
                     color="#6f706f"
                     fontSize="17px"
@@ -267,13 +280,14 @@ const Home = () => {
                     {project.description}
                   </Text>
 
-                  <Box as="div" mt="1rem">
+                  <Flex wrap="wrap" mt="1rem">
                     <Text
                       as="span"
                       px="1rem"
                       py="0.5rem"
                       borderRadius="0.5rem"
                       mr="1rem"
+                      mt="1rem"
                       bg="#1f1f1f"
                       color="#FFE100"
                       fontWeight="600"
@@ -288,6 +302,7 @@ const Home = () => {
                       py="0.6rem"
                       borderRadius="0.5rem"
                       mr="1rem"
+                      mt="1rem"
                       bg="#1f1f1f"
                       color="#FFE100"
                       fontWeight="600"
@@ -302,6 +317,7 @@ const Home = () => {
                       py="0.6rem"
                       borderRadius="0.5rem"
                       mr="1rem"
+                      mt="1rem"
                       bg="#1f1f1f"
                       color="#FFE100"
                       fontWeight="600"
@@ -316,6 +332,7 @@ const Home = () => {
                       py="0.6rem"
                       borderRadius="0.5rem"
                       mr="1rem"
+                      mt="1rem"
                       bg="#1f1f1f"
                       color="#FFE100"
                       fontWeight="600"
@@ -324,11 +341,11 @@ const Home = () => {
                     >
                       Git
                     </Text>
-                  </Box>
+                  </Flex>
 
                   <Button
                     mt="2rem"
-                    w="100px"
+                    w={{ lg: "100px", sm: "100%" }}
                     display="flex"
                     alignItems="center"
                     bg="transparent"
@@ -349,6 +366,7 @@ const Home = () => {
                     display="flex"
                     alignItems="center"
                     bg="transparent"
+                    w={{ lg: "100px", sm: "100%" }}
                   >
                     Ver codigo
                     <Image
