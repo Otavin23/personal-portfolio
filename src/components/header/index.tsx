@@ -14,8 +14,7 @@ const Header = () => {
       as="header"
       justify="center"
       py="1.5rem"
-      bg="#ffffff"
-      borderBottom="1px solid #ebe8e8"
+      borderBottom="1px solid #2b2b2b"
     >
       <Container
         display="flex"
@@ -32,26 +31,25 @@ const Header = () => {
             letterSpacing="1px"
             fontWeight="700"
           >
-            <Image src="../assets/logoOtavio.png" alt="" w="50px" mr="1rem" />{" "}
             OTAVIO
           </Text>
         </Flex>
 
         <UnorderedList display="flex" alignItems="center" listStyleType="none">
           <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">
-            Home
+            Inicio
           </ListItem>
           <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">
-            About
+            Sobre
           </ListItem>
           <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">
-            Skills
+            Habilidades
           </ListItem>
           <ListItem color="#717171" fontWeight="600" mr="3rem" cursor="pointer">
-            Projects
+            Projetos
           </ListItem>
           <ListItem color="#717171" fontWeight="600" cursor="pointer">
-            Contact
+            Contato
           </ListItem>
         </UnorderedList>
       </Container>
