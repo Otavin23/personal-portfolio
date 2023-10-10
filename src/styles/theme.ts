@@ -4,7 +4,7 @@ const themeChakra = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "#0F0F0F",
+        bg: "#000",
       },
     },
   },

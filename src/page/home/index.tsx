@@ -17,14 +17,16 @@ const Home = () => {
     <>
       <Header />
 
-      <Flex as="main" justify="center">
+      <Flex as="main" justify="center" h="100vh" id="section1">
         <Container
           w="95%"
           maxW="1200px"
           display="flex"
           flexDirection="column"
           alignItems="center"
+          justifyContent="center"
           p="0"
+          mt="72px"
         >
           <Heading
             as="h1"
@@ -32,13 +34,24 @@ const Home = () => {
             fontSize="60px"
             maxW="950px"
             textAlign="center"
+            bgGradient="linear(to-l, #727272, #ffffff)"
+            bgClip="text"
+            pos="relative"
+            _after={{
+              content: `"a"`,
+              w: "500px",
+              h: "2px",
+              bgGradient: "linear(to-r, #ffe100, #070707)",
+              left: "350px",
+              pos: "absolute",
+            }}
           >
             Olá, sou Otavio Vieira, um Desenvolvedor Web.
           </Heading>
 
           <Text
             mt="1rem"
-            fontWeight="500"
+            fontWeight="400"
             maxW="800px"
             fontSize="20px"
             color="#6f706f"
@@ -57,7 +70,8 @@ const Home = () => {
             flexWrap="wrap"
           >
             <ListItem
-              bg="#FFE100"
+              bg="linear-gradient(45deg, #ffe100, #ffef62)"
+              boxShadow="1px 1px 10px #ffea62"
               mr="1rem"
               color="#020202"
               px="1rem"
@@ -71,7 +85,8 @@ const Home = () => {
               React.js
             </ListItem>
             <ListItem
-              bg="#FFE100"
+              bg="linear-gradient(45deg, #ffe100, #ffef62)"
+              boxShadow="1px 1px 10px #ffea62"
               mr="1rem"
               color="#020202"
               px="1rem"
@@ -85,7 +100,8 @@ const Home = () => {
               Typescript
             </ListItem>
             <ListItem
-              bg="#FFE100"
+              bg="linear-gradient(45deg, #ffe100, #ffef62)"
+              boxShadow="1px 1px 10px #ffea62"
               mr="1rem"
               color="#020202"
               px="1rem"
@@ -99,7 +115,8 @@ const Home = () => {
               Next.js
             </ListItem>
             <ListItem
-              bg="#FFE100"
+              bg="linear-gradient(45deg, #ffe100, #ffef62)"
+              boxShadow="1px 1px 10px #ffea62"
               mr="1rem"
               color="#020202"
               px="1rem"
@@ -113,7 +130,8 @@ const Home = () => {
               Chakra UI
             </ListItem>
             <ListItem
-              bg="#FFE100"
+              bg="linear-gradient(45deg, #ffe100, #ffef62)"
+              boxShadow="1px 1px 10px #ffea62"
               color="#020202"
               px="1rem"
               py="0.5rem"
@@ -129,11 +147,12 @@ const Home = () => {
 
           <Flex as="div" alignItems="center" mt="5rem">
             <Button
-              bg="#181818"
+              bg="transparent"
+              border="1px solid transparent"
               color="#fff"
               py="1.7rem"
               borderRadius="0.5rem"
-              fontSize="20px"
+              fontSize="17px"
               display="flex"
               alignItems="center"
             >
@@ -183,7 +202,7 @@ const Home = () => {
         </Container>
       </Flex>
 
-      <Flex as="section" justify="center" bg="#111111">
+      <Flex as="section" justify="center" id="projects">
         <Container
           data-aos="fade-up-right"
           data-aos-duration="1500"
@@ -351,7 +370,7 @@ const Home = () => {
         </Container>
       </Flex>
 
-      <Flex as="section" justify="center" bg="#111111">
+      <Flex as="section" justify="center" id="skills">
         <Container
           data-aos="fade-up-right"
           data-aos-duration="1500"
@@ -391,6 +410,7 @@ const Home = () => {
               py="3rem"
               px="2rem"
               borderRadius="0.5rem"
+              border="1px solid #3737375e"
             >
               <Heading as="h3" color="#ffffff" fontWeight="500" fontSize="19px">
                 Frontend
@@ -570,7 +590,7 @@ const Home = () => {
 
                   <ListItem display="flex" alignItems="start" mt="2rem">
                     <Image
-                      src="../assets/skills/nextjs.svg"
+                      src="../assets/skills/next.png"
                       alt=""
                       w="25px"
                       h="25px"
@@ -619,6 +639,7 @@ const Home = () => {
               py="3rem"
               px="2rem"
               borderRadius="0.5rem"
+              border="1px solid #3737375e"
             >
               <Heading as="h3" color="#ffffff" fontWeight="500" fontSize="19px">
                 Backend
@@ -782,8 +803,21 @@ const Home = () => {
         </Container>
       </Flex>
 
-      <Flex as="footer" justifyContent="center" mt="6rem" pb="1rem">
-        <Text as="span" display="flex" alignItems="center" fontWeight="600">
+      <Flex
+        as="footer"
+        justify="center"
+        align="center"
+        mt="6rem"
+        py="1rem"
+        bg="#000000"
+      >
+        <Text
+          as="span"
+          display="flex"
+          alignItems="center"
+          fontWeight="600"
+          color="#ffffff"
+        >
           Feito com
           <svg
             stroke="2px"

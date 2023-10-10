@@ -46,29 +46,28 @@ const projectStructure: IProject[] = [
   },
   {
     image: "../assets/projects/image5.png",
-    name: "filmes e series",
+    name: "Empire Burguer",
     description:
-      "Create a new iteration based on the Vizer concept, a project that uses TheMovieDB API to collect and present detailed information about films and actors.",
+      "O Empire Burger é a sua fonte definitiva para descobrir os hambúrgueres mais incríveis em sua cidade. Aqui, você pode verificar os preços dos hambúrgueres mais saborosos e encontrar facilmente os locais onde adquiri-los. Explore nosso site para satisfazer seus desejos culinários e encontrar os hambúrgueres perfeitos para o seu paladar.",
     tech: ["React.js", "Typescript", "Chakra UI", "Git"],
 
-    demo: "https://clone-vizer.vercel.app/",
+    demo: "https://br-challenges-empire-burger.vercel.app/",
     code: "https://github.com/Otavin23/clone-vizer",
   },
   {
     image: "../assets/projects/image6.png",
-    name: "filmes e series",
+    name: "Logis entrega",
     description:
-      "Create a new iteration based on the Vizer concept, a project that uses TheMovieDB API to collect and present detailed information about films and actors.",
-
+      "Nossa landing page oferece uma experiência completa para atender às suas necessidades de entrega super-rápida. Somos seu parceiro de confiança quando se trata de entregas expressas e relâmpago. Explore nossa página e descubra como podemos tornar sua experiência de entrega mais eficiente e conveniente.",
     tech: ["React.js", "Typescript", "Chakra UI", "Git"],
     demo: "https://clone-vizer.vercel.app/",
     code: "https://github.com/Otavin23/clone-vizer",
   },
   {
     image: "../assets/projects/image7.png",
-    name: "filmes e series",
+    name: "Shark finances",
     description:
-      "Create a new iteration based on the Vizer concept, a project that uses TheMovieDB API to collect and present detailed information about films and actors.",
+      "Landing Page para Gestão de Negócios e Pagamentos - Simplifique Seus Processos Empresariais!",
     tech: ["React.js", "Typescript", "Chakra UI", "Git"],
     demo: "https://clone-vizer.vercel.app/",
     code: "https://github.com/Otavin23/clone-vizer",
