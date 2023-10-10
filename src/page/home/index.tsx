@@ -7,7 +7,6 @@ import {
   ListItem,
   Button,
   Image,
-  Box,
 } from "@chakra-ui/react";
 import { Header } from "../../components/header";
 import { projectStructure } from "../../utils/projectStructure";
@@ -17,7 +16,7 @@ const Home = () => {
     <>
       <Header />
 
-      <Flex as="main" justify="center" h="100vh" id="section1">
+      <Flex as="main" justify="center" id="section1">
         <Container
           w="95%"
           maxW="1200px"
@@ -26,7 +25,7 @@ const Home = () => {
           alignItems="center"
           justifyContent="center"
           p="0"
-          m="72px 0 0 0"
+          m={{ base: "10rem 0 0 0", lg: "10rem 0 0 0" }}
         >
           <Heading
             as="h1"
@@ -37,16 +36,20 @@ const Home = () => {
             bgGradient="linear(to-l, #727272, #ffffff)"
             bgClip="text"
             pos="relative"
-            _after={{
-              content: `"a"`,
-              w: "500px",
-              h: "2px",
-              bgGradient: "linear(to-r, #ffe100, #070707)",
-              left: "350px",
-              pos: "absolute",
-            }}
+            zIndex="-1"
           >
             Olá, sou Otavio Vieira, um Desenvolvedor Web.
+            <Text
+              as="span"
+              display={{ base: "none", md: "inline-block" }}
+              w={{ lg: "450px", md: "350px", sm: "250px" }}
+              h="2px"
+              pos="absolute"
+              left={{ lg: "350px", md: "300px" }}
+              bgGradient="linear(to-r, #ffe100, #070707)"
+            >
+              adadfdsfs
+            </Text>
           </Heading>
 
           <Text
@@ -154,7 +157,7 @@ const Home = () => {
             as="div"
             direction={{ base: "column", sm: "row" }}
             alignItems="center"
-            mt="5rem"
+            mt="4rem"
           >
             <Button
               bg="transparent"
@@ -165,6 +168,7 @@ const Home = () => {
               fontSize="17px"
               display="flex"
               alignItems="center"
+              mt="1rem"
             >
               Entre em contato
               <Image
@@ -179,6 +183,7 @@ const Home = () => {
               listStyleType="none"
               display="flex"
               alignItems="center"
+              mt="1rem"
             >
               <ListItem cursor="pointer" mr="1rem">
                 <Image
@@ -189,6 +194,7 @@ const Home = () => {
                   opacity="0.5"
                 />
               </ListItem>
+
               <ListItem cursor="pointer" mr="1rem">
                 <Image
                   src="../assets/contact/linkedin.png"
@@ -198,6 +204,7 @@ const Home = () => {
                   opacity="0.5"
                 />
               </ListItem>
+
               <ListItem cursor="pointer">
                 <Image
                   src="../assets/contact/whatssap.png"
@@ -361,12 +368,11 @@ const Home = () => {
                   </Button>
 
                   <Button
-                    w="140px"
                     mt="0.5rem"
                     display="flex"
                     alignItems="center"
                     bg="transparent"
-                    w={{ lg: "100px", sm: "100%" }}
+                    w={{ lg: "135px", sm: "100%" }}
                   >
                     Ver codigo
                     <Image
@@ -394,7 +400,8 @@ const Home = () => {
           data-aos-duration="1500"
           w="95%"
           maxW="1200px"
-          my="5rem"
+          m="5rem 0"
+          p="0"
           display="flex"
           justifyContent="center"
           alignItems="center"
@@ -417,18 +424,22 @@ const Home = () => {
             Tecnologias
           </Heading>
 
-          <Flex as="div" mt="4rem">
+          <Flex
+            direction={{ base: "column", lg: "row" }}
+            w={{ base: "100%", sm: "auto" }}
+          >
             <Flex
               as="div"
               direction="column"
               align="center"
-              w="350px"
+              w={{ base: "100%", sm: "350px" }}
               bg="#050505"
-              mr="2rem"
+              mr={{ base: "0", lg: "2rem" }}
               py="3rem"
               px="2rem"
               borderRadius="0.5rem"
               border="1px solid #3737375e"
+              mt="4rem"
             >
               <Heading as="h3" color="#ffffff" fontWeight="500" fontSize="19px">
                 Frontend
@@ -652,12 +663,14 @@ const Home = () => {
               as="div"
               direction="column"
               align="center"
-              w="350px"
               bg="#050505"
               py="3rem"
+              w={{ base: "100%", sm: "350px" }}
+              mr={{ base: "0", lg: "2rem" }}
               px="2rem"
               borderRadius="0.5rem"
               border="1px solid #3737375e"
+              mt="4rem"
             >
               <Heading as="h3" color="#ffffff" fontWeight="500" fontSize="19px">
                 Backend

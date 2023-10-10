@@ -6,7 +6,6 @@ import {
   ListItem,
   Text,
   Image,
-  useStatStyles,
 } from "@chakra-ui/react";
 import { useState } from "react";
 
@@ -96,7 +95,7 @@ const Header = () => {
               w="100%"
               top="70px"
               h="100vh"
-              zIndex="1px"
+              zIndex="2px"
               borderRadius="0 1rem 1rem 0"
             >
               <UnorderedList
