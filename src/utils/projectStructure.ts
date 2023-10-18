@@ -65,12 +65,12 @@ const projectStructure: IProject[] = [
   },
   {
     image: "../assets/projects/image7.png",
-    name: "Shark finances",
+    name: "Nextcent",
     description:
-      "Landing Page para Gestão de Negócios e Pagamentos - Simplifique Seus Processos Empresariais!",
-    tech: ["Html", "Css", "Javascript", "Git"],
-    demo: "https://gerenciamento-financeiro-landing-page.vercel.app/",
-    code: "https://github.com/Otavin23/Gerenciamento-financeiro-landing-Page",
+      "Construa uma comunidade robusta e envolvente com nosso serviço de gerenciamento de comunidade. Nossa equipe dedicada utiliza estratégias inovadoras para cultivar conexões autênticas e promover a participação ativa.",
+    tech: ["React.js", "Typescript", "Chakra UI", "Git"],
+    demo: "https://nextcent-nine.vercel.app/",
+    code: "https://github.com/Otavin23/nextcent",
   },
 ];
 
