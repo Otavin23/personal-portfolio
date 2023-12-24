@@ -6,12 +6,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #b3b2f3;
   border: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2b2b2b;
+  background: #6E6BFE;
   border: none;
 }

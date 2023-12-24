@@ -1,10 +1,10 @@
 import { ChakraBaseProvider } from "@chakra-ui/react";
-import { themeChakra } from "./styles/theme";
+import { themeChakra } from "./core/styles/theme";
 import { Home } from "./page/home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import "./styles/scrollbar.css";
+import "./core/styles/scrollbar.css";
 
 function App() {
   useEffect(() => {
