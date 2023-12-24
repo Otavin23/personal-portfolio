@@ -55,7 +55,7 @@ const Hero = () => {
           bgGradient="linear-gradient(137.59deg,#c4c4c4 20%,#ffffff 75%)"
           bgClip="text"
         >
-          Olá, sou Otavio Vieira, um Desenvolvedor Web.
+          Olá, sou Otávio Vieira, um Desenvolvedor Web.
         </Heading>
 
         <Text
